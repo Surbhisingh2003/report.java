@@ -1,0 +1,51 @@
+import java.util.*;
+class report {
+public static void main(String args[]) {
+Scanner sc =new Scanner(System.in);
+
+System.out.print("Enter the name of student ") ;
+String name = sc.nextLine();
+
+
+System.out.print("Enter the roll number ");
+int roll = sc.nextInt();
+
+System.out.print("Enter the class ");
+int clas = sc.nextInt();
+System.out.println("-----------------------------------------------------\n");
+System.out.println(" \nstudent name "+name );
+System.out.println(" roll number "+ roll);
+System.out.println(" class "+clas);
+System.out.println("----------------------------------------------------");
+System.out.println("\nSubject are Physics ,Chemistry, Math, Hindi,English");
+System.out.print("Physics      ");
+int phy=sc.nextInt();
+System.out.print("Chemistry    ");
+int che=sc.nextInt();
+System.out.print("Math         ");
+int mth=sc.nextInt();
+System.out.print("Hindi        ");
+int hin=sc.nextInt();
+System.out.print("English      ");
+int eng=sc.nextInt();
+System.out.print("Marks :    ");
+int mark;
+mark =   phy + che + mth + hin + eng;
+System.out.print(mark);
+int per;
+per =  mark*100/500;
+System.out.println("Percentage   "+per );
+if(per>=90)
+System.out.print("Grade A");
+else if(per>=80)
+System.out.print("Grade B");
+else if(per>=70)
+System.out.print("Grade C");
+else if(per>=60)
+System.out.print("Grade D");
+else if(per>=50)
+System.out.print("Grade E");
+else
+System.out.print("Grade F");
+}
+}
